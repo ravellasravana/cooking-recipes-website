@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Sravana's Cooking Recipes</h1>
+    <p>Select a cuisine to explore delicious recipes!</p>
+  </header>
+  
+  <main>
+    <!-- Cuisine Selection -->
+    <section class="cuisine-selector">
+        <h2>Explore Cuisines</h2>
+        <div class="cuisine-buttons">
+          <button class="cuisine-button" data-cuisine="italian">Italian</button>
+          <button class="cuisine-button" data-cuisine="indian">Indian</button>
+          <button class="cuisine-button" data-cuisine="chinese">Chinese</button>
+        </div>
+      </section>
+      
+    <!-- Recipe List -->
+    <section class="recipe-list" id="recipe-list">
+      <!-- Recipes will be dynamically inserted here -->
+    </section>
+
+    <!-- Back to Home button, appears when viewing recipe details -->
+    <button id="back-to-home" class="back-to-home" style="display: none;" onclick="backToHome()">Back to Home</button>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
